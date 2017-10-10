@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 class LoginForm extends Component {
 
+// **** https://stackoverflow.com/questions/31079081/programmatically-navigate-using-react-router ****
+
+// **** https://moduscreate.com/reactjs-form-validation-approaches/ ****
+
   handleLogin(){
     axios.post("/token", {
       Email: this.refs.email,

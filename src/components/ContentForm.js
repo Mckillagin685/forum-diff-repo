@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
 
-class Form extends Component {
+class ContentForm extends Component {
+  handle
+  render() {
+    let setForm;
+    let isAdd = this.props.isAdd
+    let section = this.props.section
 
- render() {
-
-    return (
-      <div className="form">
-        {/* <h3>{Section}</h3>
-        <form onSubmit={}>
-          <div>
-            <label>Title</label>
-            <input type="text" ref="title"/>
-          </div>
-          <input type="submit" value="submit" />
-        </form> */}
+    // switch (true) {
+    //   case :
+    // }
+    return(
+      <div className="ContentForm">
+        <form onSubmit={formAction}>
+          {setForm}
+        </form>
       </div>
     );
   }
 }
 
-export default Form;
+export default ContentForm;

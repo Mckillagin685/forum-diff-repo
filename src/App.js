@@ -4,6 +4,7 @@ import ListThreads from './components/ListThreads';
 import ListPosts from './components/ListPosts';
 import ListComments from './components/ListComments';
 import BBCTop from './components/BBCTop'
+import LoginButtons from './components/LoginButtons'
 import axios from 'axios';
 import "./index.css"
 
@@ -77,7 +78,8 @@ class App extends Component {
         </BrowserRouter> */}
         {/* <ListThreads threads={this.state.Threads}/> */}
         {/* <ListPosts Posts={this.state.Posts}/> */}
-        <ListComments comments={this.state.Comments}/>
+        {/* <ListComments comments={this.state.Comments}/> */}
+        {/* <LoginButtons isLoggedIn={false}/> */}
       </div>
     );
   }
