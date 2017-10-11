@@ -20,4 +20,18 @@ router.get('/threads', (req, res, next) => {
       })
 })
 
+router.get('/thread/:id', (req, res, next) => {
+  knex('threads')
+    .where('id', req.params.id)
+    .then((threads) => {
+      if (!threads) {
+        return next();
+      }
+      res.send(camelizeKeys(threads))
+    })
+    .catch((err) => {
+      next(err);
+    })
+})
+
 module.exports = router;

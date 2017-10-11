@@ -6,7 +6,13 @@ import ListComments from './components/ListComments';
 import BBCTop from './components/BBCTop'
 import LoginButtons from './components/LoginButtons'
 import axios from 'axios';
-import "./index.css"
+import './index.css';
+
+// Style options
+// **** https://hackernoon.com/the-coolest-react-ui-frameworks-for-your-new-react-app-ad699fffd651 ****
+
+// Link to Moment.js command for (10 sec ago) 
+// **** http://momentjs.com/docs/#/displaying/from/ ****
 
 class App extends Component {
   constructor(){
